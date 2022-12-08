@@ -2,6 +2,37 @@
     $conexion=mysqli_connect('localhost','root','','tercerparcial');
 ?>
 
+<style>
+    body{
+        background-color:beige;
+    }
+    h1{
+        background-color: orange;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .boton{
+        text-align: center;
+        background-color: #199319;
+        color: white;
+        padding: 15px 25px;
+        text-decoration: none;
+        align-content: center;
+        border-radius: 25px;
+    }
+    .boton:hover {
+  background-color: #223094;
+    }
+    .titulo {
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        background-color: grey;
+    }
+
+</style>
 
 
 <!DOCTYPE html>
@@ -11,17 +42,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="stylesheet" href="diseño.css"/>
 </head>
 <body>
     <h1>BLOG</h1>
     <br>
-    <table border="1">
+    <table border="3">
         <tr>
-            <td>Titulo</td>
-            <td>Imagen</td>
-            <td>Descripción</td>
-            <td>Autor</td>
+            <td class="titulo">Titulo</td>
+            <td class="titulo">Imagen</td>
+            <td class="titulo">Descripción</td>
+            <td class="titulo">Autor</td>
         </tr>
 
         <?php
@@ -46,6 +76,6 @@
     </table>
     <br>
 
-    <a href="formulario.html">Ir al formulario</a>
+    <a class="boton" href="formulario.html">Ir al formulario</a>
 </body>
 </html>
